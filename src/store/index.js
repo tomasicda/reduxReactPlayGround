@@ -8,6 +8,8 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     console.log('reducer ', action);
 
+    console.log('adding a change log to test git branching');
+    
     switch (action.type){
         case 'SEARCH_INPUT_CHANGE':
             return Object.assign({}, state, {
